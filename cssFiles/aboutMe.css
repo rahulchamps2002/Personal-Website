@@ -1,14 +1,165 @@
-
 body{
-	background: #fff;
-	margin-top: 7%;
+  background: #fff;
+  font-family: 'Anonymous Pro', monospace;
+  margin-top: 7%;
 }
 
-.logo{
-	width: 100%;
-	float: left;
-}
+.logoHB{
+  width: 100%;
+  float: left;
+  }
 
+/* navigation */
 nav{
-	
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0 2em;
+  border-bottom: 2px solid #9ec18d;
+  z-index: 999;
+}
+nav a{
+  color: #000000;
+  text-decoration: none;
+}
+nav img{
+  width: 20%;
+  float: left;
+  margin: 10px 0;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  margin-top: 3%;
+  font-weight: 300;
+  font-size: larger;
+  width: 80%;
+  justify-content: flex-end;
+}
+
+nav ul li{
+  margin: 0.5em;
+}
+
+/* text */
+.abtMeTXT {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.meImage{
+  max-width: 30%;
+  height: auto;
+  margin-top: 1em;
+}
+
+/* text */
+p{
+  font-size: 30px;
+  float:center;
+  margin-left: 10px;
+}
+
+/*HB LOGO*/
+.bottomLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+img {
+  max-width: 100%;
+}
+
+.imageBotLogo {
+  width: 20%;
+  
+}
+
+/*LINKED IN AND GITHUB LOGOS*/
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+img {
+  max-width: 100%;
+}
+
+.imageLogos{
+  /* flex-basis: 40%; */
+  width: 3.5%;
+  display: flex;
+}
+/* footer */
+footer{
+  width:100%;
+  /* color: #9ec18d; */
+  background: #fff;
+  padding: 3px;
+  text-align: center;
+}
+
+/* NAVIGATION MEDIA QUERY */
+/*small*/
+@media screen and (min-width: 200px) and (max-width: 480px){
+  /*LOGO PART NOT WORKING*/
+  .logoHB{
+      padding: .25em;
+      width:20%;
+      align-content: center;  
+  }
+  nav{
+    font-size: 0.5em;
+    width: 80%;
+    margin: 0 auto;
+    
+  }
+  nav ul{
+    margin: 0;
+    padding: .1em;
+    flex-direction: column;
+  }
+  nav ul li{
+    border-radius: 1em;
+    list-style-type: none;
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+}
+/*medium*/
+@media screen and (min-width: 481px) and (max-width: 768px){
+.logoHB{
+  padding: .6em;
+  width:40%;
+  align-content: center;  
+  overflow: hidden;
+}
+nav{
+  font-size: 1.0em;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav ul{
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+nav ul li{
+  /* display: inline-block; */
+  list-style-type: none;
+  padding: .36em 0.3em;
+}
 }	
