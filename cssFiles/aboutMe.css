@@ -1,13 +1,13 @@
 body{
-  background: #fff;
+  background: #ffffff;
   font-family: 'Anonymous Pro', monospace;
   margin-top: 7%;
 }
 
-.logoHB{
+.logos{
   width: 100%;
   float: left;
-  }
+}
 
 /* navigation */
 nav{
@@ -17,7 +17,7 @@ nav{
   left: 0;
   top: 0;
   right: 0;
-  background-color: #ffffff;
+  background-color: #172937;
   margin: 0;
   padding: 0 2em;
   border-bottom: 2px solid #9ec18d;
@@ -114,7 +114,7 @@ footer{
 /*small*/
 @media screen and (min-width: 200px) and (max-width: 480px){
   /*LOGO PART NOT WORKING*/
-  .logoHB{
+  .logos {
       padding: .25em;
       width:20%;
       align-content: center;  
@@ -140,7 +140,7 @@ footer{
 }
 /*medium*/
 @media screen and (min-width: 481px) and (max-width: 768px){
-.logoHB{
+.logos {
   padding: .6em;
   width:40%;
   align-content: center;  
